@@ -1,0 +1,55 @@
+.main
+    position relative
+    width 100%
+    height 100%
+
+    &__container
+        display flex
+        justify-content center
+
+    &__blur-button
+        margin-top w(200)
+        padding w(25) w(35)
+        font-family $ff-DrukWideMediumTrial
+        font-size w(35)
+        font-weight 700
+        line-height w(39)
+        color $c-green
+        border w(1) solid $c-green
+        border-radius w(50)
+        span
+            filter blur(4px)
+        +below(768px)
+            margin-top wm(200)
+            padding wm(25) wm(35)
+            font-size wm(35)
+            line-height wm(39)
+            border wm(1) solid $c-green
+            border-radius wm(50)
+
+    &__popup
+        padding w(35) w(25)
+        background-color $c-white
+        border w(1) solid $c-green
+        border-radius w(20)
+        display none
+        position absolute
+        top 30%
+        left 50%
+        transform translate(-50%, -50%)
+        +below(768px)
+            padding wm(35) wm(25)
+            border wm(1) solid $c-green
+            border-radius wm(20)
+
+    &__text
+        background-color $c-white
+        font-family $ff-PointRegular
+        font-size w(21)
+        font-weight 700
+        line-height w(26)
+        color $c-green
+        text-align center
+        +below(768px)
+            font-size wm(21)
+            line-height wm(26)
